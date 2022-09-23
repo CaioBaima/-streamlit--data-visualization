@@ -23,3 +23,4 @@ if st.button(f'Clique para confirmar que deseja analisar o Brasileirão até a {
     os.makedirs('tabelas_brasileirao', exist_ok=True)
     for i in range(1, rodada + 1):
         globals()[f'df_{i}'][3].to_csv(f'tabelas_brasileirao/rodada_{i}.csv')
+
